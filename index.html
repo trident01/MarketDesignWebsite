@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stanford Center for Computational Market Design</title>
+  <meta name="description" content="The Stanford Center for Computational Market Design focuses on the interdisciplinary study of modern, complex market platforms." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="https://www-media.stanford.edu/assets/favicon/favicon-32x32.png" sizes="32x32" />
+  <style>
+    /* Home-specific */
+    @media (max-width: 760px) {
+      .mission-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+    }
+    .domains {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .domain-chip {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 16px;
+      background: var(--white);
+      border: 1px solid var(--gray-300);
+      border-radius: var(--radius);
+      font-size: .88rem;
+      font-weight: 500;
+      color: var(--dark);
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+    .domain-chip:hover {
+      border-color: var(--cardinal);
+      box-shadow: var(--shadow-sm);
+    }
+    .domain-chip__icon { font-size: 1.3rem; }
+    .recent-papers-list { display: flex; flex-direction: column; gap: 12px; }
+    .recent-paper {
+      padding: 16px 20px;
+      background: var(--white);
+      border-radius: var(--radius);
+      border-left: 3px solid var(--cardinal);
+      box-shadow: var(--shadow-sm);
+      font-size: .88rem;
+      color: var(--gray-700);
+      line-height: 1.55;
+    }
+    .recent-paper em { color: var(--cardinal); font-style: italic; }
+    .news-mini-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── Nav ───────────────────────────────────────────────────── -->
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand">
+      <span class="nav__brand-top">Stanford University</span>
+      <span class="nav__brand-name">Center for Computational Market Design</span>
+    </a>
+    <div class="nav__links">
+      <a href="index.html" class="active">Home</a>
+      <a href="news.html">News</a>
+      <a href="people.html">People</a>
+      <a href="events.html">Events</a>
+      <a href="research.html">Research</a>
+      <a href="research-opportunities.html">Opportunities</a>
+    </div>
+    <button class="nav__mobile-toggle" id="menuToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav__mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="news.html">News</a>
+  <a href="people.html">People</a>
+  <a href="events.html">Events</a>
+  <a href="research.html">Research</a>
+  <a href="research-opportunities.html">Opportunities</a>
+</div>
+
+<!-- ── Hero ──────────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero__bg"></div>
+  <div class="hero__overlay"></div>
+  <div class="hero__content">
+    <h1 class="hero__title">Stanford Center for Computational Market Design</h1>
+    <p class="hero__subtitle">
+      Advancing the interdisciplinary study of modern, complex market platforms — combining algorithm design, economics, machine learning, and operations research.
+    </p>
+  </div>
+</section>
+
+<!-- ── Mission ───────────────────────────────────────────────── 
+<section class="section">
+  <div class="container">
+    <div style="max-width:720px;" class="mission-grid">
+      <div>
+        <p style="font-size:1.05rem; color:var(--gray-700); line-height:1.75;">
+          The nature of markets has been fundamentally transformed by information technology. The path from demand for exchanges to creating a marketplace is now shorter than ever. At the same time, there is growing demand for marketplaces that address complex transactions, building on computational power.
+        </p>
+        <p style="font-size:1.05rem; color:var(--gray-700); line-height:1.75; margin-top:16px;">
+          The Stanford Center for Computational Market Design brings together an interdisciplinary team with expertise spanning algorithm design, economics, machine learning, and operations research — focused on tackling timely market challenges.
+        </p>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- ── Latest News ───────────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Latest News</h2>
+      <div class="section-title__line"></div>
+      <a href="news.html" class="section-title__link">All News &rarr;</a>
+    </div>
+    <div class="news-mini-grid">
+      <a class="card" href="https://msande.stanford.edu/news/amin-saberi-receives-2025-acm-sigecom-test-time-award" target="_blank" rel="noopener">
+        <img class="card__image" src="images/news/saberi.jpg" alt="Amin Saberi ACM SIGecom Award" loading="lazy" />
+        <div class="card__body">
+          <div class="card__meta">February 26, 2026</div>
+          <div class="card__title">Amin Saberi receives 2024 and 2025 ACM SIGecom Test of Time Award</div>
+          <p class="card__excerpt">Amin Saberi is honored with the ACM SIGecom Test of Time Award for both 2024 and 2025, recognizing his foundational contributions to algorithmic economics.</p>
+        </div>
+      </a>
+      <a class="card" href="https://siepr.stanford.edu/news/siepr-researchers-named-2026-sloan-research-fellows" target="_blank" rel="noopener">
+        <img class="card__image" src="images/news/sloan-2026-fellows.png" alt="Sloan Research Fellows 2026" loading="lazy" />
+        <div class="card__body">
+          <div class="card__meta">February 26, 2026</div>
+          <div class="card__title">SIEPR's Juliane Begenau, Shoshana Vasserman named Sloan Research Fellows</div>
+          <p class="card__excerpt">Juliane Begenau and Shoshana Vasserman have been named 2026 Sloan Research Fellows, recognizing their outstanding early-career research in economics.</p>
+        </div>
+      </a>
+      <a class="card" href="https://msande.stanford.edu/news/itai-ashlagi-wins-lanchester-prize" target="_blank" rel="noopener">
+        <img class="card__image" src="images/news/ashlagi-lanchester.jpeg" alt="Itai Ashlagi Lanchester Prize" loading="lazy" />
+        <div class="card__body">
+          <div class="card__meta">February 26, 2026</div>
+          <div class="card__title">Itai Ashlagi wins Lanchester Prize</div>
+          <p class="card__excerpt">Itai Ashlagi wins the Lanchester Prize, one of the most prestigious honors in operations research, for his landmark work on matching markets.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Recent Papers ─────────────────────────────────────────── -->
+<section class="section section--gray">
+  <div class="container">
+    <div class="section-title">
+      <h2>Selected Recent Papers</h2>
+      <div class="section-title__line"></div>
+      <a href="research.html" class="section-title__link">All Research &rarr;</a>
+    </div>
+    <div class="recent-papers-list">
+      <div class="recent-paper">K. Leyton-Brown, P. Milgrom, N. Newman, I. Segal, <em>Artificial Intelligence and Market Design: Lessons Learned from Radio Spectrum Reallocation</em>, in <strong>New Directions in Market Design</strong> (Univ. of Chicago Press), 2026.</div>
+      <div class="recent-paper">A. AmaniHamedani, A. Aouad, A. Saberi, <em>Adaptive Approximation Schemes for Matching Queues</em>, <strong>STOC 2025</strong>.</div>
+      <div class="recent-paper">M. Braverman, M. Derakhshan, T. Pollner, A. Saberi, D. Wajc, <em>New Philosopher Inequalities for Online Bayesian Matching, via Pivotal Sampling</em>, <strong>SODA 2025</strong>.</div>
+      <div class="recent-paper">N. Agarwal, C. Hodgson, P. Somaini, <em>Choices and Outcomes in Assignment Mechanisms: The Allocation of Deceased Donor Kidneys</em>, <strong>Econometrica</strong>, 2025.</div>
+      <div class="recent-paper">Z. Y. Kang, S. Vasserman, <em>Robustness Measures for Welfare Analysis</em>, <strong>American Economic Review</strong>, 2025.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Upcoming Events ───────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Ongoing Seminars</h2>
+      <div class="section-title__line"></div>
+      <a href="events.html" class="section-title__link">All Events &rarr;</a>
+    </div>
+    <div class="events-list">
+      <a class="event-item event-item--seminar" href="https://anaymehrotra.com/REFORM-reading-group/" target="_blank" rel="noopener">
+        <div class="event-date" style="background:var(--gold);">
+          <div class="event-date__month">Thu</div>
+          <div class="event-date__day" style="font-size:1rem; padding:4px 0;">Weekly</div>
+        </div>
+        <div class="event-info">
+          <div class="event-type event-type--seminar">Reading Group</div>
+          <div class="event-title">REFORM (Rethinking Foundations of Real-world ML)</div>
+          <div class="event-details">Thursdays 5:00–6:00 PM PT &nbsp;&bull;&nbsp; CoDa E201</div>
+        </div>
+      </a>
+      <a class="event-item event-item--seminar" href="https://rain.stanford.edu/" target="_blank" rel="noopener">
+        <div class="event-date" style="background:var(--gold);">
+          <div class="event-date__month">Tue</div>
+          <div class="event-date__day" style="font-size:1rem; padding:4px 0;">Weekly</div>
+        </div>
+        <div class="event-info">
+          <div class="event-type event-type--seminar">Seminar Series</div>
+          <div class="event-title">Stanford RAIN (Research on Artificial Intelligence and INcentives)</div>
+          <div class="event-details">Tuesdays 4:30–5:30 PM PT &nbsp;&bull;&nbsp; Spilker 232</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ────────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand-name">Stanford Center for Computational Market Design</div>
+        <p class="footer__desc">An interdisciplinary research center advancing the study of complex market platforms through algorithm design, economics, machine learning, and operations research.</p>
+      </div>
+      <div>
+        <div class="footer__heading">Navigation</div>
+        <div class="footer__links">
+          <a href="index.html">Home</a>
+          <a href="news.html">News</a>
+          <a href="people.html">People</a>
+          <a href="events.html">Events</a>
+          <a href="research.html">Research</a>
+          <a href="research-opportunities.html">Opportunities</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__heading">Stanford</div>
+        <div class="footer__links">
+          <a href="https://www.stanford.edu" target="_blank" rel="noopener">Stanford Home</a>
+          <a href="https://engineering.stanford.edu" target="_blank" rel="noopener">School of Engineering</a>
+          <a href="https://www.gsb.stanford.edu" target="_blank" rel="noopener">Graduate School of Business</a>
+          <a href="https://www.stanford.edu/site/privacy/" target="_blank" rel="noopener">Privacy</a>
+          <a href="https://www.stanford.edu/site/terms/" target="_blank" rel="noopener">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Nav scroll effect
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 20);
+  });
+  // Mobile menu
+  const toggle = document.getElementById('menuToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+  toggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
+  });
+</script>
+</body>
+</html>

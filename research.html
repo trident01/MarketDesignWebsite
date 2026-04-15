@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research — Stanford Center for Computational Market Design</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="https://www-media.stanford.edu/assets/favicon/favicon-32x32.png" sizes="32x32" />
+  <style>
+    .year-group { margin-bottom: 40px; }
+    .year-label {
+      font-size: .78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      color: var(--cardinal);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .year-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--gray-300);
+    }
+    .research-intro {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 48px;
+      padding: 40px;
+      background: var(--gray-100);
+      border-radius: var(--radius-lg);
+    }
+    @media (max-width: 700px) { .research-intro { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand">
+      <span class="nav__brand-top">Stanford University</span>
+      <span class="nav__brand-name">Center for Computational Market Design</span>
+    </a>
+    <div class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="news.html">News</a>
+      <a href="people.html">People</a>
+      <a href="events.html">Events</a>
+      <a href="research.html" class="active">Research</a>
+      <a href="research-opportunities.html">Opportunities</a>
+    </div>
+    <button class="nav__mobile-toggle" id="menuToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav__mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="news.html">News</a>
+  <a href="people.html">People</a>
+  <a href="events.html">Events</a>
+  <a href="research.html">Research</a>
+  <a href="research-opportunities.html">Opportunities</a>
+</div>
+
+
+<section class="section" style="padding-top: calc(var(--nav-height) + 48px);">
+  <div class="container">
+
+    <!-- Research overview -->
+    <div class="section-title">
+      <h2>Overview</h2>
+      <div class="section-title__line"></div>
+    </div>
+    <div style="margin-bottom:52px;">
+      <p>The nature of markets has been fundamentally transformed by information technology. There is growing demand for marketplaces that address complex transactions, building on computational power, and the path from this demand to creating a marketplace is shorter than ever. This technological evolution offers unprecedented control over market design, implementation, and operations.</p>
+      <p>The Stanford Center for Computational Market Design brings together an interdisciplinary team spanning algorithm design, economics, machine learning, and operations research, focused on tackling timely market challenges. It emphasizes combining algorithms, economic theory, and empirical tools toward insightful market designs that consider operational intricacies and technological constraints — understanding sources of market friction, designing market rules to increase efficiency, and simplifying strategic considerations for different stakeholders.</p>
+      <h3 style="margin: 28px 0 8px; color: var(--cardinal);">Focus Areas</h3>
+      <p style="margin-bottom:0;">Scholars of this center bring extensive experience shaping the design of marketplaces and platforms across domains including education, environment, health, labor, spectrum, and transportation.</p>
+    </div>
+
+    <div class="section-title">
+      <h2>Selected Recent Papers</h2>
+      <div class="section-title__line"></div>
+    </div>
+
+    <!-- 2026 -->
+    <div class="year-group">
+      <div class="year-label">2026</div>
+      <div class="papers-list">
+        <div class="paper-item">
+          <p>K. Leyton-Brown, P. Milgrom, N. Newman, I. Segal, <em>Artificial Intelligence and Market Design: Lessons Learned from Radio Spectrum Reallocation</em>, in <strong>New Directions in Market Design</strong> (University of Chicago Press), 2026.</p>
+        </div>
+        <div class="paper-item">
+          <p>A. E. Roth, <em>Market Design and Maintenance</em>, in <strong>New Directions in Market Design</strong> (University of Chicago Press), 2026.</p>
+        </div>
+        <div class="paper-item">
+          <p>B. A. Ferguson, P. Milgrom, <em>Market Design for Surface Water</em>, in <strong>New Directions in Market Design</strong> (University of Chicago Press), 2026.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2025 -->
+    <div class="year-group">
+      <div class="year-label">2025</div>
+      <div class="papers-list">
+        <div class="paper-item">
+          <p>A. AmaniHamedani, A. Aouad, A. Saberi, <em>Adaptive Approximation Schemes for Matching Queues</em><span class="venue">STOC 2025</span></p>
+        </div>
+        <div class="paper-item">
+          <p>M. Allman, I. Ashlagi, A. Saberi, S. H. Yu, <em>From Signaling to Interviews in Random Matching Markets</em><span class="venue">STOC 2025</span></p>
+        </div>
+        <div class="paper-item">
+          <p>M. Braverman, M. Derakhshan, T. Pollner, A. Saberi, D. Wajc, <em>New Philosopher Inequalities for Online Bayesian Matching, via Pivotal Sampling</em><span class="venue">SODA 2025</span></p>
+        </div>
+        <div class="paper-item">
+          <p>A. Rubinstein, Z. Zhou, <em>Quantum Communication Complexity of Classical Auctions</em><span class="venue">ITCS 2025</span></p>
+        </div>
+        <div class="paper-item">
+          <p>I. Ashlagi, J. Chen, M. Roghani, A. Saberi, <em>Stable Matching with Interviews</em><span class="venue">ITCS 2025</span></p>
+        </div>
+        <div class="paper-item">
+          <p>O. Barrientos, D. Freund, D. Saban, <em>Online Matching and Market Imbalance</em><span class="venue">arXiv preprint, 2025</span></p>
+        </div>
+        <div class="paper-item">
+          <p>M.-F. Balcan, T. Sandholm, E. Vitercik, <em>Generalization Guarantees for Multi-item Profit Maximization: Pricing, Auctions, and Randomized Mechanisms</em><span class="venue">Operations Research, 2025</span></p>
+        </div>
+        <div class="paper-item">
+          <p>N. Agarwal, C. Hodgson, P. Somaini, <em>Choices and Outcomes in Assignment Mechanisms: The Allocation of Deceased Donor Kidneys</em><span class="venue">Econometrica, 2025</span></p>
+        </div>
+        <div class="paper-item">
+          <p>Z. Y. Kang, S. Vasserman, <em>Robustness Measures for Welfare Analysis</em><span class="venue">American Economic Review, 2025</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2024 -->
+    <div class="year-group">
+      <div class="year-label">2024</div>
+      <div class="papers-list">
+        <div class="paper-item">
+          <p>W. Guo, N. Haghtalab, K. Kandasamy, E. Vitercik, <em>Leveraging Reviews: Learning to Price with Buyer and Seller Uncertainty</em><span class="venue">EC 2024</span></p>
+        </div>
+        <div class="paper-item">
+          <p>R. Gao, M. Roghani, A. Rubinstein, A. Saberi, <em>Hardness of Approximate Sperner and Applications to Envy-Free Cake Cutting</em><span class="venue">FOCS 2024</span></p>
+        </div>
+        <div class="paper-item">
+          <p>A. Hayderi, A. Saberi, E. Vitercik, A. Wikum, <em>MAGNOLIA: Matching Algorithms via GNNs for Online Value-to-go Approximation</em><span class="venue">ICML 2024</span></p>
+        </div>
+        <div class="paper-item">
+          <p>Y. Feng, R. Niazadeh, A. Saberi, <em>Two-Stage Stochastic Matching and Pricing with Applications to Ride Hailing</em><span class="venue">Operations Research, 2024</span></p>
+        </div>
+        <div class="paper-item">
+          <p>Y. Feng, R. Niazadeh, A. Saberi, <em>Near-Optimal Bayesian Online Assortment of Reusable Resources</em><span class="venue">Operations Research, 2024</span></p>
+        </div>
+        <div class="paper-item">
+          <p>T. Pollner, M. Roghani, A. Saberi, D. Wajc, <em>Improved Online Contention Resolution for Matchings and Applications to the Gig Economy</em><span class="venue">Mathematics of Operations Research, 2024</span></p>
+        </div>
+        <div class="paper-item">
+          <p>C. H. Papadimitriou, T. Pollner, A. Saberi, D. Wajc, <em>Online Stochastic Max-Weight Bipartite Matching: Beyond Prophet Inequalities</em><span class="venue">Mathematics of Operations Research, 2024</span></p>
+        </div>
+        <div class="paper-item">
+          <p>R. Jagadeesan, K. Vocke, <em>Stability in Large Markets</em><span class="venue">Review of Economic Studies, 2024</span></p>
+        </div>
+        <div class="paper-item">
+          <p>G. Ramseyer, M. Goyal, A. Goel, D. Mazières, <em>Augmenting Batch Exchanges with Constant Function Market Makers</em><span class="venue">EC 2024</span></p>
+        </div>
+        <div class="paper-item">
+          <p>R. Johari, H. Li, A. Murthy, G. Y. Weintraub, <em>When Does Interference Matter? Decision-Making in Platform Experiments</em><span class="venue">arXiv preprint, 2024</span></p>
+        </div>
+        <div class="paper-item">
+          <p>Y. Wu, R. Johari, V. Syrgkanis, G. Y. Weintraub, <em>Switchback Price Experiments with Forward-Looking Demand</em><span class="venue">arXiv preprint, 2024</span></p>
+        </div>
+        <div class="paper-item">
+          <p>A. Rubinstein, J. Zhao, <em>Strategizing against No-Regret Learners in First-Price Auctions</em><span class="venue">EC 2024</span></p>
+        </div>
+        <div class="paper-item">
+          <p>N. Newman, K. Leyton-Brown, P. Milgrom, I. Segal, <em>Incentive Auction Design Alternatives: A Simulation Study</em><span class="venue">Management Science, 2024</span></p>
+        </div>
+        <div class="paper-item">
+          <p>M. Olivares, D. Saban, G. Y. Weintraub, E. Lara, P. Zanocco, P. Moreno, <em>Saving Millions in Government Procurement Through Data Science</em><span class="venue">INFORMS Journal on Applied Analytics, 2024</span></p>
+        </div>
+        <div class="paper-item">
+          <p>P. Agte, C. Allende, A. Kapor, C. Neilson, F. Ochoa, <em>Search and Biased Beliefs in Education Markets</em><span class="venue">NBER Working Paper 32670, 2024</span></p>
+        </div>
+        <div class="paper-item">
+          <p>C. Allende, J. P. Atal, R. Carril, J. I. Cuesta, A. González-Lira, <em>Drivers of Public Procurement Prices: Evidence from Pharmaceutical Markets</em><span class="venue">International Journal of Industrial Organization, 2024</span></p>
+        </div>
+        <div class="paper-item">
+          <p>J. S. Huh, E. Vitercik, K. Kandasamy, <em>Bandit Profit-Maximization for Targeted Marketing</em><span class="venue">EC 2024</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2023 -->
+    <div class="year-group">
+      <div class="year-label">2023</div>
+      <div class="papers-list">
+        <div class="paper-item">
+          <p>A. Graur, I. Lo, K. Mentzer, <em>Overbooking with Priority-Respecting Reassignment</em><span class="venue">EAAMO 2023</span></p>
+        </div>
+        <div class="paper-item">
+          <p>N. Immorlica, J. D. Leshno, I. Lo, B. Lucier, <em>Information Acquisition in Matching Markets: The Role of Price Discovery</em><span class="venue">Working Paper, 2023</span></p>
+        </div>
+        <div class="paper-item">
+          <p>M. Goyal, G. Ramseyer, A. Goel, D. Mazières, <em>Finding the Right Curve: Optimal Design of Constant Function Market Makers</em><span class="venue">EC 2023</span></p>
+        </div>
+        <div class="paper-item">
+          <p>G. Ramseyer, A. Goel, D. Mazières, <em>SPEEDEX: A Scalable, Parallelizable, and Economically Efficient Decentralized Exchange</em><span class="venue">NSDI 2023</span></p>
+        </div>
+        <div class="paper-item">
+          <p>W. Dhaouadi, R. Johari, O. B. Page, G. Y. Weintraub, <em>Price Experimentation and Interference</em><span class="venue">arXiv:2310.17165, 2023</span></p>
+        </div>
+        <div class="paper-item">
+          <p>J. Choi, D. Saban, G. Y. Weintraub, <em>The Design of Optimal Pay-as-Bid Procurement Mechanisms</em><span class="venue">Manufacturing &amp; Service Operations Management, 2023</span></p>
+        </div>
+        <div class="paper-item">
+          <p>V. Manshadi, S. Rodilitz, D. Saban, A. Suresh, <em>Redesigning VolunteerMatch's Search Algorithm</em><span class="venue">SSRN Working Paper, 2023</span></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand-name">Stanford Center for Computational Market Design</div>
+        <p class="footer__desc">An interdisciplinary research center advancing the study of complex market platforms.</p>
+      </div>
+      <div>
+        <div class="footer__heading">Navigation</div>
+        <div class="footer__links">
+          <a href="index.html">Home</a>
+          <a href="news.html">News</a>
+          <a href="people.html">People</a>
+          <a href="events.html">Events</a>
+          <a href="research.html">Research</a>
+          <a href="research-opportunities.html">Opportunities</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__heading">Stanford</div>
+        <div class="footer__links">
+          <a href="https://www.stanford.edu" target="_blank" rel="noopener">Stanford Home</a>
+          <a href="https://engineering.stanford.edu" target="_blank" rel="noopener">School of Engineering</a>
+          <a href="https://www.gsb.stanford.edu" target="_blank" rel="noopener">Graduate School of Business</a>
+          <a href="https://www.stanford.edu/site/privacy/" target="_blank" rel="noopener">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20));
+  document.getElementById('menuToggle').addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  });
+</script>
+</body>
+</html>
