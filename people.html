@@ -23,6 +23,16 @@
       transition: transform var(--transition), box-shadow var(--transition);
       text-decoration: none;
       color: inherit;
+      position: relative;
+    }
+    a.director-card::after {
+      content: '↗';
+      position: absolute;
+      bottom: 14px;
+      right: 16px;
+      font-size: .8rem;
+      color: var(--gray-500);
+      line-height: 1;
     }
     .director-card:hover {
       transform: translateY(-4px);
@@ -34,7 +44,7 @@
       object-fit: cover;
       object-position: center top;
     }
-    .director-card__body { padding: 16px; }
+    .director-card__body { padding: 16px 36px 28px 16px; }
     .director-card__name { font-size: 1.05rem; font-weight: 700; color: var(--dark); margin-bottom: 4px; }
     .director-card__role { font-size: .82rem; color: var(--gray-500); line-height: 1.4; }
     .director-card__tag {
@@ -94,8 +104,7 @@
   <div class="container" style="display:flex;gap:4px;">
     <button class="tab-btn active" data-target="section-directors">Directors</button>
     <button class="tab-btn" data-target="section-faculty">Faculty</button>
-    <button class="tab-btn" data-target="section-students">Students</button>
-    <button class="tab-btn" data-target="section-affiliated">Affiliated Members</button>
+    <button class="tab-btn" data-target="section-students">Students and Postdocs</button>
   </div>
 </div>
 
@@ -255,25 +264,18 @@
       </div>
     </div>
 
-    <!-- ── Students ──────────────────────────────────────────── -->
+    <!-- ── Students and Postdocs ────────────────────────────── -->
     <div class="people-section" id="section-students">
       <div class="section-title">
-        <h2>Students</h2>
+        <h2>Students and Postdocs</h2>
         <div class="section-title__line"></div>
       </div>
-      <div class="people-grid" style="margin-bottom:64px;">
-        <a class="person-card" href="https://billyferguson.github.io/" target="_blank" rel="noopener">
-          <img class="person-card__photo" src="https://marketdesign.stanford.edu/sites/g/files/sbiybj30901/files/styles/square_1900/public/media/image/bf_0.png?h=756685e0&itok=tErsnm17" alt="Billy Ferguson" loading="lazy" />
+      <div class="people-grid">
+        <a class="person-card" href="https://dzcxjennifer.github.io/" target="_blank" rel="noopener">
+          <img class="person-card__photo" src="images/jennifer_chen.jpg" alt="Jennifer Chen" loading="lazy" />
           <div class="person-card__body">
-            <div class="person-card__name">Billy Ferguson</div>
-            <div class="person-card__role">PhD student in Economics, Graduate School of Business</div>
-          </div>
-        </a>
-        <a class="person-card" href="https://guanzgrace.github.io/" target="_blank" rel="noopener">
-          <img class="person-card__photo" src="https://marketdesign.stanford.edu/sites/g/files/sbiybj30901/files/styles/square_1900/public/media/image/gg_0.png?h=a7b21d34&itok=Al5vhKFp" alt="Grace Guan" loading="lazy" />
-          <div class="person-card__body">
-            <div class="person-card__name">Grace Guan</div>
-            <div class="person-card__role">PhD student in Management Science and Engineering</div>
+            <div class="person-card__name">Jennifer Chen</div>
+            <div class="person-card__role">PhD student in Operations Research</div>
           </div>
         </a>
         <a class="person-card" href="https://sites.google.com/view/senem-ashak/home" target="_blank" rel="noopener">
@@ -283,58 +285,13 @@
             <div class="person-card__role">PhD student in Management Science and Engineering</div>
           </div>
         </a>
-        <a class="person-card" href="https://sites.google.com/view/devanshjalota" target="_blank" rel="noopener">
-          <img class="person-card__photo" src="https://marketdesign.stanford.edu/sites/g/files/sbiybj30901/files/styles/square_1900/public/media/image/dj_0.png?h=0a4727b2&itok=iZ5-O4NT" alt="Devansh Jalota" loading="lazy" />
+        <a class="person-card" href="https://elaines-liu.github.io/" target="_blank" rel="noopener">
+          <img class="person-card__photo" src="images/elaine_liu.jpg" alt="Elaine Liu" loading="lazy" />
           <div class="person-card__body">
-            <div class="person-card__name">Devansh Jalota</div>
-            <div class="person-card__role">PhD student in Computational and Mathematical Engineering</div>
-          </div>
-        </a>
-        <a class="person-card" href="https://www.stanford.edu" target="_blank" rel="noopener">
-          <img class="person-card__photo" src="https://marketdesign.stanford.edu/sites/g/files/sbiybj30901/files/styles/square_1900/public/media/image/bl_0.png?h=49c26d3c&itok=k2jM95aV" alt="Bing Liu" loading="lazy" />
-          <div class="person-card__body">
-            <div class="person-card__name">Bing Liu</div>
-            <div class="person-card__role">PhD student in Economics</div>
-          </div>
-        </a>
-        <a class="person-card" href="https://sites.google.com/view/lnagel" target="_blank" rel="noopener">
-          <img class="person-card__photo" src="https://marketdesign.stanford.edu/sites/g/files/sbiybj30901/files/styles/square_1900/public/media/image/ln_0.jpg?h=3b623896&itok=HUr1acu0" alt="Lea Nagel" loading="lazy" />
-          <div class="person-card__body">
-            <div class="person-card__name">Lea Nagel</div>
-            <div class="person-card__role">PhD student in Economics</div>
-          </div>
-        </a>
-        <a class="person-card" href="https://www.tristanpollner.com/" target="_blank" rel="noopener">
-          <img class="person-card__photo" src="https://marketdesign.stanford.edu/sites/g/files/sbiybj30901/files/styles/square_1900/public/media/image/tp_0.jpeg?h=d7174090&itok=HOjk_m1l" alt="Tristan Pollner" loading="lazy" />
-          <div class="person-card__body">
-            <div class="person-card__name">Tristan Pollner</div>
+            <div class="person-card__name">Elaine Liu</div>
             <div class="person-card__role">PhD student in Management Science and Engineering</div>
           </div>
         </a>
-        <a class="person-card" href="https://www.roberto-saitto.com/" target="_blank" rel="noopener">
-          <img class="person-card__photo" src="https://marketdesign.stanford.edu/sites/g/files/sbiybj30901/files/styles/square_1900/public/media/image/rs_0.png?h=6e1889e3&itok=s0d2T9Io" alt="Roberto Saitto" loading="lazy" />
-          <div class="person-card__body">
-            <div class="person-card__name">Roberto Saitto</div>
-            <div class="person-card__role">PhD student in Economics</div>
-          </div>
-        </a>
-        <a class="person-card" href="https://www.kurtsweat.com/" target="_blank" rel="noopener">
-          <img class="person-card__photo" src="https://marketdesign.stanford.edu/sites/g/files/sbiybj30901/files/styles/square_1900/public/media/image/ks_0.jpeg?h=253ad5a3&itok=ARipU_xQ" alt="Kurt Sweat" loading="lazy" />
-          <div class="person-card__body">
-            <div class="person-card__name">Kurt Sweat</div>
-            <div class="person-card__role">PhD student in Economics</div>
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <!-- ── Affiliated Members ─────────────────────────────────── -->
-    <div class="people-section" id="section-affiliated">
-      <div class="section-title">
-        <h2>Affiliated Members</h2>
-        <div class="section-title__line"></div>
-      </div>
-      <div class="people-grid">
         <a class="person-card" href="https://anaymehrotra.com/" target="_blank" rel="noopener">
           <img class="person-card__photo" src="https://marketdesign.stanford.edu/sites/g/files/sbiybj30901/files/styles/square_1900/public/media/image/anay_mehrotra_2023_square_0.jpg?h=05a84ca7&itok=3WuszLi7" alt="Anay Mehrotra" loading="lazy" />
           <div class="person-card__body">
@@ -347,13 +304,6 @@
           <div class="person-card__body">
             <div class="person-card__name">Xizhi Tan</div>
             <div class="person-card__role">Motwani Postdoctoral Fellow</div>
-          </div>
-        </a>
-        <a class="person-card" href="https://sites.google.com/view/danielwaldinger" target="_blank" rel="noopener">
-          <img class="person-card__photo" src="https://marketdesign.stanford.edu/sites/g/files/sbiybj30901/files/styles/square_1900/public/media/image/dw_0.jpeg?h=51d43d6f&itok=1wcvKUC1" alt="Daniel Waldinger" loading="lazy" />
-          <div class="person-card__body">
-            <div class="person-card__name">Daniel Waldinger</div>
-            <div class="person-card__role">Visiting Stanford Institute for Economic Policy Research</div>
           </div>
         </a>
       </div>
@@ -412,7 +362,7 @@
   });
 
   // Highlight active section button on scroll
-  const sections = ['section-directors', 'section-faculty', 'section-students', 'section-affiliated'];
+  const sections = ['section-directors', 'section-faculty', 'section-students'];
   const buttons = document.querySelectorAll('.tab-btn[data-target]');
   const tabsBar = document.getElementById('people-tabs');
 

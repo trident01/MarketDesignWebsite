@@ -38,14 +38,28 @@
     .domain-chip__icon { font-size: 1.3rem; }
     .recent-papers-list { display: flex; flex-direction: column; gap: 12px; }
     .recent-paper {
-      padding: 16px 20px;
-      background: var(--white);
+      padding: 16px 44px 16px 20px;
+      background: linear-gradient(to right, rgba(140,21,21,.06) 0%, var(--white) 55%);
       border-radius: var(--radius);
-      border-left: 3px solid var(--cardinal);
+      border-left: 4px solid var(--cardinal);
       box-shadow: var(--shadow-sm);
       font-size: .88rem;
       color: var(--gray-700);
       line-height: 1.55;
+      position: relative;
+      text-decoration: none;
+      display: block;
+      transition: box-shadow var(--transition);
+    }
+    a.recent-paper:hover { box-shadow: var(--shadow-md); }
+    a.recent-paper::after {
+      content: '↗';
+      position: absolute;
+      bottom: 14px;
+      right: 16px;
+      font-size: .8rem;
+      color: var(--gray-500);
+      line-height: 1;
     }
     .recent-paper em { color: var(--cardinal); font-style: italic; }
     .news-mini-grid {
@@ -160,11 +174,11 @@
       <a href="research.html" class="section-title__link">All Research &rarr;</a>
     </div>
     <div class="recent-papers-list">
-      <div class="recent-paper">K. Leyton-Brown, P. Milgrom, N. Newman, I. Segal, <em>Artificial Intelligence and Market Design: Lessons Learned from Radio Spectrum Reallocation</em>, in <strong>New Directions in Market Design</strong> (Univ. of Chicago Press), 2026.</div>
-      <div class="recent-paper">A. AmaniHamedani, A. Aouad, A. Saberi, <em>Adaptive Approximation Schemes for Matching Queues</em>, <strong>STOC 2025</strong>.</div>
-      <div class="recent-paper">M. Braverman, M. Derakhshan, T. Pollner, A. Saberi, D. Wajc, <em>New Philosopher Inequalities for Online Bayesian Matching, via Pivotal Sampling</em>, <strong>SODA 2025</strong>.</div>
-      <div class="recent-paper">N. Agarwal, C. Hodgson, P. Somaini, <em>Choices and Outcomes in Assignment Mechanisms: The Allocation of Deceased Donor Kidneys</em>, <strong>Econometrica</strong>, 2025.</div>
-      <div class="recent-paper">Z. Y. Kang, S. Vasserman, <em>Robustness Measures for Welfare Analysis</em>, <strong>American Economic Review</strong>, 2025.</div>
+      <a class="recent-paper" href="http://arxiv.org/abs/2604.00437" target="_blank" rel="noopener">A. Rubinstein, S. Singla, <em>Secretary, Prophet, and Stochastic Probing via Big-Decisions-First</em>, <strong>arXiv preprint</strong>, 2026.</a>
+      <a class="recent-paper" href="http://arxiv.org/abs/2604.00129" target="_blank" rel="noopener">M. Babaioff, A. Rubinstein, X. Tan, K. Wang, <em>Approximating Gains-from-Trade in Matching Markets</em>, <strong>arXiv preprint</strong>, 2026.</a>
+      <a class="recent-paper" href="https://doi.org/10.1016/j.xkme.2026.101276" target="_blank" rel="noopener">G. Guan, J. Studnia, S. Neelam, X. S. Cheng, M. Melcher, N. Agarwal, P. Somaini, I. Ashlagi, <em>Machine Learning Predictions for Assessing Hard-to-Place Deceased Donor Kidneys</em>, <strong>Kidney Medicine</strong>, 2026.</a>
+      <a class="recent-paper" href="https://doi.org/10.1137/1.9781611978971.209" target="_blank" rel="noopener">T. Pollner, A. Saberi, A. Wikum, <em>Optimal Rounding for Two-Stage Bipartite Matching</em>, <strong>SODA 2026</strong>.</a>
+      <a class="recent-paper" href="https://doi.org/10.1137/1.9781611978971.232" target="_blank" rel="noopener">P. Dütting, M. Feldman, Y. Gal-Tzur, A. Rubinstein, <em>When Contracts Get Complex: Information-Theoretic Barriers</em>, <strong>SODA 2026</strong>.</a>
     </div>
   </div>
 </section>
