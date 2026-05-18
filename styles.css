@@ -558,9 +558,9 @@ a.person-card::after {
 }
 
 /* ── Research papers ────────────────────────────────────────── */
-.papers-list { display: flex; flex-direction: column; gap: 12px; }
+.papers-list { display: flex; flex-direction: column; gap: 14px; }
 .paper-item {
-  padding: 20px 24px;
+  padding: 22px 26px;
   background: linear-gradient(to right, rgba(140,21,21,.06) 0%, var(--white) 55%);
   border-radius: var(--radius);
   box-shadow: var(--shadow-sm);
@@ -571,20 +571,20 @@ a.person-card::after {
   box-shadow: var(--shadow-md);
 }
 .paper-item p {
-  font-size: .9rem;
+  font-size: .96rem;
   margin-bottom: 0;
   color: var(--gray-700);
-  line-height: 1.6;
+  line-height: 1.58;
 }
 .paper-item p em { font-style: italic; color: var(--cardinal); }
 .paper-item p strong { color: var(--dark); font-weight: 600; }
 .paper-item .venue {
-  display: inline-block;
-  margin-top: 6px;
-  font-size: .75rem;
+  display: table;
+  margin-top: 9px;
+  font-size: .78rem;
   background: var(--gray-100);
   color: var(--gray-700);
-  padding: 2px 8px;
+  padding: 3px 9px;
   border-radius: 20px;
   font-weight: 500;
 }
@@ -597,36 +597,45 @@ a.person-card::after {
 }
 .paper-item__summary > p { flex: 1; margin-bottom: 0; }
 .paper-item__chevron {
-  font-size: 1.1rem;
-  color: var(--gray-400);
+  font-size: 1.25rem;
+  color: var(--gray-500);
   transition: transform var(--transition);
   flex-shrink: 0;
-  line-height: 1.5;
+  line-height: 1.35;
 }
 .paper-item--expandable.is-open .paper-item__chevron { transform: rotate(90deg); }
 .paper-item__details {
   display: none;
-  margin-top: 14px;
-  padding-top: 14px;
-  border-top: 1px solid var(--gray-200);
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--gray-300);
 }
 .paper-item--expandable.is-open .paper-item__details { display: block; }
-.paper-item__abstract {
-  font-size: .85rem;
+.paper-item__abstract,
+.paper-item_abstract {
+  font-size: .92rem;
   color: var(--gray-600);
-  line-height: 1.65;
-  margin-bottom: 12px;
+  line-height: 1.7;
+  margin-bottom: 14px;
 }
 .paper-item__link {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  font-size: .82rem;
+  font-size: .86rem;
   color: var(--cardinal);
   font-weight: 600;
   text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: rgba(140,21,21,.07);
+  transition: background var(--transition), color var(--transition);
 }
-.paper-item__link:hover { text-decoration: underline; }
+.paper-item__link:hover {
+  background: rgba(140,21,21,.12);
+  color: var(--cardinal-dark);
+  text-decoration: none;
+}
 
 /* ── Page hero (inner pages) ────────────────────────────────── */
 .page-hero {
