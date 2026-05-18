@@ -611,12 +611,12 @@ a.person-card::after {
   border-top: 1px solid var(--gray-300);
 }
 .paper-item--expandable.is-open .paper-item__details { display: block; }
-.paper-item__abstract,
-.paper-item_abstract {
+.paper-item p.paper-item__abstract,
+.paper-item p.paper-item_abstract {
   font-size: .92rem;
   color: var(--gray-600);
   line-height: 1.7;
-  margin-bottom: 14px;
+  margin-bottom: 20px;
 }
 .paper-item__link {
   display: inline-flex;
