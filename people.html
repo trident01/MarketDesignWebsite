@@ -8,56 +8,7 @@
   <link rel="icon" href="https://www-media.stanford.edu/assets/favicon/favicon-32x32.png" sizes="32x32" />
   <style>
     .directors-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 28px;
       margin-bottom: 64px;
-    }
-    .director-card {
-      background: var(--white);
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      box-shadow: var(--shadow-md);
-      display: block;
-      text-align: center;
-      transition: transform var(--transition), box-shadow var(--transition);
-      text-decoration: none;
-      color: inherit;
-      position: relative;
-    }
-    a.director-card::after {
-      content: '↗';
-      position: absolute;
-      bottom: 14px;
-      right: 16px;
-      font-size: .8rem;
-      color: var(--gray-500);
-      line-height: 1;
-    }
-    .director-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-lg);
-    }
-    .director-card__photo {
-      width: 100%;
-      aspect-ratio: 1;
-      object-fit: cover;
-      object-position: center top;
-    }
-    .director-card__body { padding: 16px 36px 28px 16px; }
-    .director-card__name { font-size: 1.05rem; font-weight: 700; color: var(--dark); margin-bottom: 4px; }
-    .director-card__role { font-size: .82rem; color: var(--gray-500); line-height: 1.4; }
-    .director-card__tag {
-      display: inline-block;
-      margin-top: 8px;
-      padding: 3px 10px;
-      background: rgba(140,21,21,.1);
-      color: var(--cardinal);
-      border-radius: 20px;
-      font-size: .72rem;
-      font-weight: 700;
-      letter-spacing: .05em;
-      text-transform: uppercase;
     }
     /* Scroll-nav overrides */
     .tabs { position: sticky; top: var(--nav-height); z-index: 100; background: var(--white); border-bottom: 2px solid var(--gray-200, #e8e8e8); margin-bottom: 0; }
@@ -76,6 +27,7 @@
     <a href="index.html" class="nav__brand">
       <span class="nav__brand-top">Stanford University</span>
       <span class="nav__brand-name">Center for Computational Market Design</span>
+      <span class="nav__brand-mobile">Stanford Market Design</span>
     </a>
     <div class="nav__links">
       <a href="index.html">Home</a>
@@ -117,19 +69,19 @@
         <h2>Directors</h2>
         <div class="section-title__line"></div>
       </div>
-      <div class="directors-grid">
-        <a class="director-card" href="https://web.stanford.edu/~iashlagi/" target="_blank" rel="noopener">
-          <img class="director-card__photo" src="https://marketdesign.stanford.edu/sites/g/files/sbiybj30901/files/styles/square_1900/public/media/image/ia.jpg?h=d68a8792&itok=Io9M96Fz" alt="Itai Ashlagi" loading="lazy" />
-          <div class="director-card__body">
-            <div class="director-card__name">Itai Ashlagi</div>
-            <div class="director-card__role">Professor of Management Science and Engineering</div>
+      <div class="people-grid directors-grid">
+        <a class="person-card" href="https://web.stanford.edu/~iashlagi/" target="_blank" rel="noopener">
+          <img class="person-card__photo" src="https://marketdesign.stanford.edu/sites/g/files/sbiybj30901/files/styles/square_1900/public/media/image/ia.jpg?h=d68a8792&itok=Io9M96Fz" alt="Itai Ashlagi" loading="lazy" />
+          <div class="person-card__body">
+            <div class="person-card__name">Itai Ashlagi</div>
+            <div class="person-card__role">Professor of Management Science and Engineering</div>
           </div>
         </a>
-        <a class="director-card" href="https://web.stanford.edu/~saberi/" target="_blank" rel="noopener">
-          <img class="director-card__photo" src="https://marketdesign.stanford.edu/sites/g/files/sbiybj30901/files/styles/square_1900/public/media/image/as_0.jpeg?h=a84fc7b2&itok=L5fJhTTa" alt="Amin Saberi" loading="lazy" />
-          <div class="director-card__body">
-            <div class="director-card__name">Amin Saberi</div>
-            <div class="director-card__role">Professor of Management Science and Engineering</div>
+        <a class="person-card" href="https://web.stanford.edu/~saberi/" target="_blank" rel="noopener">
+          <img class="person-card__photo" src="https://marketdesign.stanford.edu/sites/g/files/sbiybj30901/files/styles/square_1900/public/media/image/as_0.jpeg?h=a84fc7b2&itok=L5fJhTTa" alt="Amin Saberi" loading="lazy" />
+          <div class="person-card__body">
+            <div class="person-card__name">Amin Saberi</div>
+            <div class="person-card__role">Professor of Management Science and Engineering</div>
           </div>
         </a>
       </div>

@@ -126,11 +126,24 @@ p:last-child { margin-bottom: 0; }
   line-height: 1.25;
   white-space: nowrap;
 }
+.nav__brand-mobile { display: none; }
 @media (max-width: 600px) {
+  .nav__brand {
+    flex-direction: row;
+    align-items: center;
+  }
+  .nav__brand-top,
   .nav__brand-name {
-    white-space: normal;
-    max-width: 220px;
-    font-size: 1rem;
+    display: none;
+  }
+  .nav__brand-mobile {
+    display: block;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.08rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--dark);
+    white-space: nowrap;
   }
 }
 .nav__links {
@@ -621,19 +634,18 @@ a.person-card::after {
 .paper-item__link {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  font-size: .86rem;
+  gap: 5px;
+  font-size: .87rem;
   color: var(--cardinal);
   font-weight: 600;
   text-decoration: none;
-  padding: 4px 10px;
-  border-radius: 20px;
-  background: rgba(140,21,21,.07);
-  transition: background var(--transition), color var(--transition);
+  border-bottom: 1px solid rgba(140,21,21,.35);
+  padding-bottom: 2px;
+  transition: border-color var(--transition), color var(--transition);
 }
 .paper-item__link:hover {
-  background: rgba(140,21,21,.12);
   color: var(--cardinal-dark);
+  border-bottom-color: var(--cardinal-dark);
   text-decoration: none;
 }
 
